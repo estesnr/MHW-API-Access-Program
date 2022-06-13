@@ -10,13 +10,15 @@ function getFetch() {
     const choice = document.querySelector('input').value;
     clearList(monstWeak)
     let url = `https://mhwapi.herokuapp.com/api/${choice}`
-    fetch(url) 
+    fetch(url)
         .then(res => res.json())
         .then(data => {
             console.log(data)
             document.querySelector('#monstName').innerText = data.name
             document.querySelector('#monstType').innerText = data.type
             document.querySelector('#monstPic').src = data.img
+            document.querySelector('#logo').src = data.logo
+            document.querySelector('#desc').innerText = data.desc
             document.querySelector('#weakTitle').innerText = 'WEAKNESSES'
             data.weakness.forEach(el => {
                 console.log(el.element)

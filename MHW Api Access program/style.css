@@ -1,5 +1,9 @@
+* {
+    box-sizing: border-box;
+
+}
 body {
-    background-image: url('https://res.cloudinary.com/teepublic/image/private/s--UsT-6RM7--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1520522793/production/designs/2445394_0.jpg');
+    background-color: black;
     background-size: cover;
 }
 
@@ -10,15 +14,18 @@ h1, h2 {
 
 }
 
+header {
+    background-image: url(img/logo.jpg);
+}
+
 p {
     color: white;
 }
 
 img {
-    height: 600px;
+    height: 500px;
     width: auto;
-    display: block;
-    margin-left: auto;
+    margin-left: 100px;
     margin-right: auto;
 }
 
@@ -36,12 +43,38 @@ ul {
     color: white;
 }
 
-#monstName, #monstType, #weakBox {
+#monstName, #monstType {
     text-align: center;
     font-size: 32px;
     font-family: 'Kaushan Script', cursive;
 }
 
+#infoBox {
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Kaushan Script', cursive;
+}
+
 li {
     list-style-type: none;
+}
+
+#picSec {
+    width: 60%;
+    height: 700px;
+    float: left;
+}
+
+#infoBox {
+    margin-top: 25px;
+    background-color: black;
+}
+
+#picSec {
+    background-image: url('img/picBackground.jpg');
+    background-size: cover;
+}
+
+#logo {
+    height: 100px;
 }
